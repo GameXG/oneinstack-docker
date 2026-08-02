@@ -2,7 +2,7 @@ ARG MONGODB_VERSION=8.3
 FROM mongo:${MONGODB_VERSION}
 
 LABEL org.opencontainers.image.title="OneinStack MongoDB"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 COPY initdb /docker-entrypoint-initdb.d
 COPY secrets-entrypoint /usr/local/bin/oneinstack-secrets-entrypoint

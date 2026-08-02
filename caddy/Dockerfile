@@ -1,8 +1,8 @@
-ARG CADDY_VERSION=2
+ARG CADDY_VERSION=2.11.4
 FROM caddy:${CADDY_VERSION}-alpine
 
 LABEL org.opencontainers.image.title="OneinStack Caddy"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 COPY Caddyfile /etc/caddy/Caddyfile
 COPY sites /etc/caddy/sites

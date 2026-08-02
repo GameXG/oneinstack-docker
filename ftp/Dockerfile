@@ -1,10 +1,10 @@
-FROM alpine:3.22
+FROM alpine:3.24
 
 ARG APP_UID=1000
 ARG APP_GID=1000
 
 LABEL org.opencontainers.image.title="OneinStack Pure-FTPd"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 RUN set -eux; \
     apk add --no-cache openssl pure-ftpd shadow; \

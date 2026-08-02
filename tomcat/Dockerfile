@@ -4,7 +4,7 @@ ARG TOMCAT_BASE_IMAGE=tomcat:${TOMCAT_VERSION}-jdk${JDK_VERSION}-temurin
 FROM ${TOMCAT_BASE_IMAGE}
 
 LABEL org.opencontainers.image.title="OneinStack Tomcat"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 RUN set -eux; \
     rm -rf /usr/local/tomcat/webapps/*; \

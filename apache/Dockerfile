@@ -1,8 +1,8 @@
-ARG APACHE_VERSION=2.4
-FROM httpd:${APACHE_VERSION}
+ARG APACHE_VERSION=2.4.68
+FROM httpd:${APACHE_VERSION}-alpine
 
 LABEL org.opencontainers.image.title="OneinStack Apache"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 RUN set -eux; \
     sed -ri \

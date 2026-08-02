@@ -3,7 +3,7 @@ ARG REDIS_BASE_IMAGE=redis:${REDIS_VERSION}-alpine
 FROM ${REDIS_BASE_IMAGE}
 
 LABEL org.opencontainers.image.title="OneinStack Redis"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 COPY redis.conf /usr/local/etc/redis/redis.conf
 

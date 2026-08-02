@@ -2,6 +2,6 @@ ARG MYSQL_VERSION=9.7
 FROM mysql:${MYSQL_VERSION}
 
 LABEL org.opencontainers.image.title="OneinStack MySQL"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 COPY conf.d/oneinstack.cnf /etc/mysql/conf.d/oneinstack.cnf

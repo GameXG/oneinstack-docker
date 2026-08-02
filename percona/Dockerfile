@@ -2,7 +2,7 @@ ARG PERCONA_VERSION=8.4
 FROM percona/percona-server:${PERCONA_VERSION}
 
 LABEL org.opencontainers.image.title="OneinStack Percona Server"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 USER root
 

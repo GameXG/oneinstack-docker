@@ -3,6 +3,6 @@ ARG MEMCACHED_BASE_IMAGE=memcached:${MEMCACHED_VERSION}-alpine
 FROM ${MEMCACHED_BASE_IMAGE}
 
 LABEL org.opencontainers.image.title="OneinStack Memcached"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 EXPOSE 11211

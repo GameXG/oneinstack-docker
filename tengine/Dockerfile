@@ -1,4 +1,4 @@
-FROM alpine:3.22 AS builder
+FROM alpine:3.24 AS builder
 
 ARG TENGINE_VERSION=3.1.0
 ARG TENGINE_SHA256=64ed7155c0c904ce0fe7199c21b8eb6c2abfc267278fa8af832c0cb781e864dc
@@ -28,10 +28,10 @@ RUN set -eux; \
     make -j"$(getconf _NPROCESSORS_ONLN)"; \
     make install
 
-FROM alpine:3.22
+FROM alpine:3.24
 
 LABEL org.opencontainers.image.title="OneinStack Tengine"
-LABEL org.opencontainers.image.source="https://github.com/Luan-X/oneinstack"
+LABEL org.opencontainers.image.source="https://github.com/GameXG/oneinstack"
 
 RUN apk add --no-cache ca-certificates openssl pcre2 wget zlib
 
